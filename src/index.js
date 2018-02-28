@@ -9,11 +9,11 @@
 
 
             do{
-                if(number % fives === 0) {
+
                     count5 +=  number/fives;
                     number = number/fives;
 
-                }
+
 
             }
             while (number!= 0)
