@@ -1,26 +1,20 @@
 
-//module.exports =
-        function getZerosCount(number) {
+module.exports =  function getZerosCount(number) {
 
             const fives = 5;
 
             var count5 = 0;
-            var count2 = 0;
+            //var count2 = 0; 
 
 
             do{
-
-                    count5 +=  number/fives;
-                    number = number/fives;
-
-
+                number = number /fives;
+                count5 += Math.floor(number);
 
             }
             while (number!= 0)
 
-            return count5 + count2;
+
+            return count5;
         }
 
-
-
-console.log(getZerosCount(84583674));
